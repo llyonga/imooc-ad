@@ -1,0 +1,11 @@
+server:
+  port: 10010
+spring:
+  application:
+    name: ad-gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://114.67.108.221:10000/eureka/
+
+
