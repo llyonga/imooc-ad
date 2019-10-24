@@ -1,0 +1,23 @@
+server:
+  port: 10100
+  servlet:
+    context-path: ad-sponsor
+spring:
+  application:
+    name: ad-sponsor
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate.format_sql: true
+    open-in-view: false
+  datasource:
+    url: jdbc:mysql://114.67.108.221:3306/imooc_ad_data?autoReconnect=true
+    username: root
+    password: 123456
+eureka:
+  client:
+    service-url:
+      defaultZone: http://114.67.108.221:10000/eureka/
